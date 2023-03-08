@@ -39,7 +39,9 @@ function App() {
       ) : (
         <LoadingScreen />
       )}
-      {weather ? <DegreeChange degree={degree} setDegree={setDegree} /> : NaN}
+      {weather ? (
+        <DegreeChange degree={degree} setDegree={setDegree} />
+      ) : undefined}
     </div>
   );
 }
