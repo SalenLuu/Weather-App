@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  background-color: #5D6D7E;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.weatherBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vw;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4vw;
+  padding-bottom: 1rem;
+
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+h3,
+h4 {
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.weatherInfo {
+  display: flex;
+  width: 35vw;
+  height: 20vw;
+  justify-content: start;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: #eaf2f8aa;
+}
+
+.weatherInfo>article {
+  width: 18vw;
+}
+
+.cloud {
+  width: 12vw;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vw;
+}
+
+.customizedButton {
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  border: 1rem;
+  border-radius: 0.5rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+}
+
+.iconCloud,
+img {
+  height: 20%;
+}
+
+.iconCloud {
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5D6D7E;
+  opacity: .3;
+  animation: load 2s infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .weatherBox {
+    padding-top: 15vw;
+  }
+
+  h1 {
+
+    font-size: 3vw;
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+
+    font-size: 2vw;
+    margin-top: 0.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5vw;
+  }
+
+  .button {
+    padding-top: 4vw;
+  }
+
+  .customizedButton {
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .weatherBox {
+    padding-top: 20vw;
+  }
+
+  .weatherInfo {
+    width: 40vw;
+    height: 20vw;
+    padding: 3rem;
+  }
+
+
+  h1 {
+
+    font-size: 3vw;
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+
+    font-size: 2vw;
+    margin-top: 0.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5vw;
+  }
+
+  .button {
+    padding-top: 5vw;
+  }
+
+  .customizedButton {
+    font-weight: 600;
+    font-size: 2vw;
+  }
+
+}
+
+@media (max-width: 426px) {
+  .weatherBox {
+    padding-top: 30vw;
+  }
+
+  .weatherInfo {
+    width: 60vw;
+    height: 30vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+    padding-bottom: 0.25rem;
+  }
+
+  h2 {
+    font-size: 3vw;
+    margin-top: 0.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 2vw;
+  }
+
+  .weatherInfo>article {
+    width: 20vw;
+  }
+
+  .cloud {
+    width: 18vw;
+  }
+
+  .button {
+    padding-top: 5vw;
+  }
+
+  .customizedButton {
+    font-weight: 600;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 326px) {
+  .weatherBox {
+    padding-top: 40vw;
+  }
+
+  .weatherInfo {
+    width: 70vw;
+    height: 40vw;
+    padding: 2rem;
+  }
+
+  .weatherInfo>article {
+    width: 30vw;
+  }
+
+  h1 {
+    font-size: 7.25vw;
+    padding-bottom: 0.25rem;
+  }
+
+  h2 {
+    font-size: 4.25vw;
+    margin-top: 0.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 3vw;
+  }
+
+  .button {
+    padding-top: 5vw;
+  }
+
+  .customizedButton {
+    font-weight: 600;
+    font-size: 3vw;
+  }
+}
